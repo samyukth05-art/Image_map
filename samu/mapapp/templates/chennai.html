@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <title>Chennai</title>
+    <style>
+
+        img{
+            
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             height: 100vh;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+   
+    <img src="{% static 'chennai.png' %}" alt="Chennai" usemap="#imap" >
+    <map name="imap">
+        <area shape="rect" coords="1,2,1803,642" href="{% url 'eg' %}" title="chennai">
+
+    </map>
+</body>
+</html>
